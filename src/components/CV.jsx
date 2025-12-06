@@ -54,7 +54,7 @@ export default function CV() {
         <div className="cv-header-content">
           <div className="cv-profile">
             <div className="profile-image">
-              <img src="https://ui-avatars.com/api/?name=Alex+Martinez&size=200&background=ff0000&color=fff&bold=true" alt="Profile" />
+              <img src="..\1758083794008.png" alt="Profile" />
               <div className="profile-status"></div>
             </div>
           </div>

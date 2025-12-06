@@ -9,7 +9,7 @@ export default function Footer() {
           <Code size={28} />
           <span>DevStudio</span>
         </div>
-        <p>Creando experiencias digitales excepcionales desde 2020</p>
+        <p>Creando experiencias digitales excepcionales desde 2024</p>
         <div className="footer-links">
           <a href="#servicios">Servicios</a>
           <a href="#proceso">Proceso</a>

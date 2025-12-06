@@ -14,8 +14,7 @@ export default function Services() {
         "Responsive 100%",
         "Optimización SEO básica",
         "Formulario de contacto",
-        "3 secciones incluidas",
-        "Entrega en 7 días"
+        "3 secciones incluidas"
       ],
       popular: false
     },
@@ -32,8 +31,7 @@ export default function Services() {
         "Optimización SEO avanzada",
         "Integración Analytics",
         "Formularios personalizados",
-        "Galería de imágenes",
-        "Entrega en 14 días"
+        "Galería de imágenes"
       ],
       popular: true
     },
@@ -50,9 +48,7 @@ export default function Services() {
         "Panel de administración",
         "Gestión de inventario",
         "Sistema de envíos",
-        "Cupones y descuentos",
-        "Reportes de ventas",
-        "Entrega en 21 días"
+        "Reportes de ventas"
       ],
       popular: false
     }
@@ -102,7 +98,7 @@ export default function Services() {
       </div>
 
       <div className="pricing-note">
-        <p>* Todos los precios incluyen dominio .com por 1 año y hosting por 3 meses</p>
+        <p>* Los precios no incluyen Hosting</p>
       </div>
     </section>
   );

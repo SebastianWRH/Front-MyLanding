@@ -1,8 +1,8 @@
-// src/components/CTA.jsx
+// src/components/QuoteForm.jsx
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 
-export default function CTA() {
+export default function QuoteForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -97,7 +97,7 @@ export default function CTA() {
             <p style={{ margin: 0, color: '#ef4444', textAlign: 'left' }}>{errorMessage}</p>
           </div>
         )}
-        
+
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <div style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
             <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>

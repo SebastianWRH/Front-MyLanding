@@ -89,10 +89,11 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-
-            <button className="btn-pricing">
-              Solicitar cotización
-            </button>
+            <a href="#contacto">
+              <button className="btn-pricing">
+                Solicitar cotización
+              </button>
+            </a>
           </div>
         ))}
       </div>

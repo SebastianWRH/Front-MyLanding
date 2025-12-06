@@ -118,6 +118,7 @@ export default function CTA() {
                 border: '2px solid rgba(0, 0, 0, 0.2)',
                 fontSize: '1rem',
                 background: 'rgba(255, 255, 255, 0.9)',
+                color: '#000000',
                 opacity: status === 'loading' ? 0.6 : 1
               }}
             />
@@ -142,6 +143,7 @@ export default function CTA() {
                 border: '2px solid rgba(0, 0, 0, 0.2)',
                 fontSize: '1rem',
                 background: 'rgba(255, 255, 255, 0.9)',
+                color: '#000000',
                 opacity: status === 'loading' ? 0.6 : 1
               }}
             />
@@ -164,6 +166,7 @@ export default function CTA() {
                 border: '2px solid rgba(0, 0, 0, 0.2)',
                 fontSize: '1rem',
                 background: 'rgba(255, 255, 255, 0.9)',
+                color: '#000000',
                 cursor: 'pointer',
                 opacity: status === 'loading' ? 0.6 : 1
               }}
@@ -196,6 +199,7 @@ export default function CTA() {
                 border: '2px solid rgba(0, 0, 0, 0.2)',
                 fontSize: '1rem',
                 background: 'rgba(255, 255, 255, 0.9)',
+                color: '#000000',
                 resize: 'vertical',
                 fontFamily: 'inherit',
                 opacity: status === 'loading' ? 0.6 : 1
@@ -230,6 +234,22 @@ export default function CTA() {
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
+        }
+        
+        /* Asegurar que el texto sea visible en todos los inputs */
+        input::placeholder,
+        textarea::placeholder,
+        select option {
+          color: #666666 !important;
+          opacity: 0.7;
+        }
+        
+        input:focus,
+        textarea:focus,
+        select:focus {
+          outline: none;
+          border-color: #7c8f10;
+          box-shadow: 0 0 0 3px rgba(124, 143, 16, 0.2);
         }
       `}</style>
     </section>

@@ -30,7 +30,7 @@ export default function CTA() {
     try {
       console.log('📡 Sending to backend...');
       
-      const response = await fetch('http://localhost:3001/api/send-quote', {
+      const response = await fetch('https://back-mylanding.vercel.app/api/send-quote', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ export default function CTA() {
     } catch (error) {
       console.error('❌ Connection error:', error);
       setStatus('error');
-      setErrorMessage('No se pudo conectar con el servidor. Asegúrate de que el backend esté corriendo en http://localhost:3001');
+      setErrorMessage('No se pudo conectar con el servidor. Por favor, intenta más tarde.');
     }
   };
 

@@ -27,7 +27,7 @@ export default function Portfolio() {
       title: "MyLanding",
       description: "Mi Pagina Actual",
       tech: ["Vite", "React", "css"],
-      image: "https://github.com/SebastianWRH/Front-MyLanding/blob/main/src/assets/imagen_2025-12-08_023209939.png?raw=true",
+      image: "https://github.com/SebastianWRH/Front-MyLanding/blob/main/src/assets/mylanding.png?raw=true",
       url: "https://www.nova-dev.site/#contacto"
     }
   ];

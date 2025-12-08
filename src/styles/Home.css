@@ -1,4 +1,371 @@
+/* Portfolio Section - 3D Carousel */
 .portfolio {
+  padding: 6rem 2rem;
+  background: #0a0a0a;
+  overflow: hidden;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portfolio-header h2 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.portfolio-header p {
+  font-size: 1.25rem;
+  color: #999;
+}
+
+.portfolio-carousel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.carousel-perspective {
+  perspective: 2000px;
+  perspective-origin: center center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-3d-space {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-card-3d {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -465px;
+  margin-top: -230px;
+  width: 930px;
+  height: 460px;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #222;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card-3d.active {
+  cursor: pointer;
+}
+
+.portfolio-card-3d.active:hover {
+  border-color: #444;
+  box-shadow: 0 25px 50px rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-image-3d {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.portfolio-category {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.portfolio-info {
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 70%, transparent 100%);
+}
+
+.portfolio-info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.portfolio-info p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.3s;
+  color: #000;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.carousel-btn-left {
+  left: 20px;
+}
+
+.carousel-btn-right {
+  right: 20px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 100;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.indicator.active {
+  width: 32px;
+  background: #fff;
+}
+
+/* PORTFOLIO RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .portfolio-carousel-container {
+    padding: 0 60px;
+    height: 500px;
+  }
+
+  .carousel-3d-space {
+    height: 400px;
+  }
+
+  .portfolio-card-3d {
+    width: 700px;
+    height: 346px;
+    margin-left: -350px;
+    margin-top: -173px;
+  }
+
+  .portfolio-info {
+    padding: 1.5rem;
+  }
+
+  .portfolio-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-info p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 4rem 1rem;
+  }
+
+  .portfolio-header h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-header p {
+    font-size: 1rem;
+  }
+
+  .portfolio-carousel-container {
+    padding: 0 20px;
+    height: 400px;
+  }
+
+  .carousel-perspective {
+    perspective: 1200px;
+  }
+
+  .carousel-3d-space {
+    height: 320px;
+  }
+
+  .portfolio-card-3d {
+    width: 90vw;
+    max-width: 500px;
+    height: calc(90vw * 0.495);
+    max-height: 247px;
+    margin-left: calc(-45vw);
+    margin-top: calc(-45vw * 0.495);
+  }
+
+  .portfolio-category {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .portfolio-info {
+    padding: 1rem;
+  }
+
+  .portfolio-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio-info p {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .tech-stack {
+    gap: 0.5rem;
+  }
+
+  .tech-badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-btn-left {
+    left: 10px;
+  }
+
+  .carousel-btn-right {
+    right: 10px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 3rem 0.5rem;
+  }
+
+  .portfolio-carousel-container {
+    padding: 0 10px;
+    height: 350px;
+  }
+
+  .carousel-3d-space {
+    height: 280px;
+  }
+
+  .portfolio-card-3d {
+    width: 95vw;
+    max-width: 400px;
+    height: calc(95vw * 0.495);
+    max-height: 198px;
+    margin-left: calc(-47.5vw);
+    margin-top: calc(-47.5vw * 0.495);
+  }
+
+  .portfolio-info {
+    padding: 0.75rem;
+  }
+
+  .portfolio-info h3 {
+    font-size: 1rem;
+  }
+
+  .portfolio-info p {
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .tech-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+  }
+}.portfolio {
   padding: 6rem 2rem;
   background: #0a0a0a;
   overflow: hidden;

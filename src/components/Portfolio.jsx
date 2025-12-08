@@ -17,10 +17,10 @@ export default function Portfolio() {
     {
       category: "E-Commerce",
       title: "Picchu Wassi Hotel",
-      description: "Sistema de gestión con analytics en tiempo real",
-      tech: ["React", "Node.js", "CSS"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1860&h=920&fit=crop",
-      url: "https://example.com/dashboard"
+      description: "Sistema de reservas de un Hotel (En mantenimiento)",
+      tech: ["Html", "Node.js", "CSS"],
+      image: "https://github.com/SebastianWRH/Front-MyLanding/blob/main/src/assets/imagen_2025-12-08_112838933.png?raw=true",
+      url: "https://www.nova-dev.site"
     },
     {
       category: "Landing",

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <Code size={28} />
-          <span>DevStudio</span>
+          <span>NovaDev</span>
         </div>
         <p>Creando experiencias digitales excepcionales desde 2024</p>
         <div className="footer-links">

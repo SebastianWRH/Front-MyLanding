@@ -57,4 +57,3 @@ Apasionado por la programación y el desarrollo web. Cuento con experiencia en e
       </section>
     </div>
   );
-}

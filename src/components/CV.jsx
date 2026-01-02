@@ -11,7 +11,7 @@ export default function CV() {
         <div className="cv-header-content">
           <div className="cv-profile">
             <div className="profile-image">
-              <img src="..\1758083794008.png" alt="Profile" />
+              <img src="..\1758083794008.webp" alt="Profile" />
             </div>
           </div>
 

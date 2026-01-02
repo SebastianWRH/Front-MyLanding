@@ -2,51 +2,6 @@ import React from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Globe, Code, Award, Briefcase, GraduationCap, Download } from 'lucide-react';
 import '../styles/Home.css';
 
-export default function CV() {
-  const skills = [
-    { name: "React", level: 95 },
-    { name: "JavaScript", level: 90 },
-    { name: "Node.js", level: 85 },
-    { name: "CSS/Tailwind", level: 90 },
-    { name: "TypeScript", level: 80 },
-    { name: "Next.js", level: 85 },
-    { name: "MongoDB", level: 75 },
-    { name: "Git", level: 90 }
-  ];
-
-  const education = [
-    {
-      year: "2021",
-      title: "Certificación Full Stack",
-      institution: "Platzi / Udemy",
-      description: "Especialización en desarrollo MERN Stack"
-    },
-    {
-      year: "2018",
-      title: "Ingeniería en Sistemas",
-      institution: "Universidad Tecnológica",
-      description: "Enfoque en desarrollo de software y bases de datos"
-    }
-  ];
-
-  const projects = [
-    {
-      title: "E-commerce Platform",
-      description: "Plataforma de comercio electrónico completa con pasarela de pagos",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"]
-    },
-    {
-      title: "Dashboard Analytics",
-      description: "Sistema de análisis de datos en tiempo real con gráficos interactivos",
-      tech: ["Vue.js", "D3.js", "Firebase"]
-    },
-    {
-      title: "Social Media App",
-      description: "Aplicación social con chat en tiempo real y sistema de posts",
-      tech: ["React Native", "Socket.io", "PostgreSQL"]
-    }
-  ];
-
   return (
     <div className="cv-container">
       {/* Header Section */}
@@ -55,7 +10,6 @@ export default function CV() {
           <div className="cv-profile">
             <div className="profile-image">
               <img src="..\1758083794008.png" alt="Profile" />
-              <div className="profile-status"></div>
             </div>
           </div>
           
